@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box; /*Tamanho da caixa de titulo (manchete) */
+    margin: 0;
+    padding: 0;
+}
+
+body > header{ /*Cores e fontes do titulo (manchete)*/
+    background-color: rgb(5, 5, 5);
+    padding: 16px 0;
+    color: rgb(229, 255, 0);
+}
+
+header .container{ /* Aqui faz com que as imagens e noticias fiquem em sequencia, alinhadas, centralizadas*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{ /* (li) são os sub titulos da pagina e como vao ficar, alinhado em lista etc*/
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif; /*fonte do texto*/
+    font-weight: bold;/*negrito*/
+    margin-left: 16px;/*espaço de margem*/
+}
+
+header li a { /*Cor fonte tamanho e tipo dos subtitulos (li)*/
+    color: rgb(255, 240, 252);
+    text-decoration: none;/*tira o underline*/    
+}
+
+header li a:hover{/*Aqui colocamos uma função de quando passar o mouse em cima do texto o underline aparece*/
+    text-decoration: underline;
+    color: gold;
+}
+
+.container { /*Tamanha da pagina web*/
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/*ATENÇÃO: (articles) foi a classe criada para alterar os textos dos artigos da pagina*/
+
+.articles { /*Espaçamentos entre uma noticia e outra, texto e imagens*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img { /*Tamanho das imagens*/
+    /* height: 180px;*/
+    width: 100%;
+}
+
+.articles article { /*Texto das noticias tamanho cor etc*/
+    width: 30%;
+}
+
+section{ /*Padding --> preechimento da caixa de texto*/
+    padding: 16px 0;
+}
+
+section h2,
+.articles article { /*h2 -> titulos das noticias / aqui mudamos a posição*/
+    margin-bottom: 16px;
+}
+
+.articles article h3 { /*Mudança de posição dos artigos da pagina*/
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{ /*articles "a" é os botoes da pagina, aqui estilizamos os mesmos*/
+    background-color: dimgray; /*Cor do botao*/
+    color: black;/*Cor do texto do botao*/
+    padding: 8px;/*Tamanho do botao*/
+    display: inline-block; /*Se o botao vai ficar em bloco ou em linha*/
+    text-decoration: none; /*Sem o underline abaixo do texto*/
+    font-weight: bold; /*Deixar o texto do botao em negrito*/
+}
+
+.articles article a:hover { /*Aqui colocamos uma função de quando passar o mouse em cima do botão o underline aparece*/
+    text-decoration: underline; 
+}
+
+.articles article p, /*"p" são os titulos da noticia aqui mudamos a fonte das letras*/
+.articles article a { /* "a" são os botoes, aqui mudamos as letras tbm*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {/*mudamos a fonte do textos das noticias*/
+    font-size: 24px;
+}
+
+section h2 { /*mudamos a fonte dos subtitulos*/
+    font-size: 32px;
+}
+
+#sports { /* aqui colocamos um fundo na parte de esporte (id=sports)*/
+    background-color:darkkhaki;
+}
+
+#economy {/* aqui colocamos um fundo na parte de economia (id=economy)*/
+    background-color: goldenrod;
+}
+
+#tecnology {
+    background-color: darkcyan;
+}
+
+#entretenimento {
+    background-color: rgba(255, 0, 0, 0.562);
+}
+
+
+
+
+
+
+
